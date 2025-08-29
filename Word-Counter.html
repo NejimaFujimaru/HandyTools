@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handy Tools - Word Counter</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Linking to Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/Media Folder/Icon.png" type="image/png">
+
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+  <!--Header Section done-->
+  <header>
+    <div class="header-container">
+      <a href="/Pages/index.html" class="logo"><img src="/Media Folder/logo.png" alt="Logo"></a>
+      <button id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+          <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Main Section partial-->
+  <main>
+    <!-- Introuduction Done -->
+    <div id="word-count-hero">
+      <div class="black-box">
+        <section id="word-counter-intro">
+          <h1>Word Counter Tool</h1>
+          <div>
+            <p>Welcome to the Word Counter Tool! This simple yet powerful utility helps you keep track of the number of words and characters in your text. Whether you're writing an essay, a blog post, or any other document, our tool ensures you stay within your desired limits.</p>
+          </div>
+          <section id="tool-interactive">
+            <h2>Add Your Text:</h2>
+            <textarea id="text-input" placeholder="Type or paste your text here..."></textarea>
+            <div id="count-display">
+              <strong><p>WORD COUNT: <span id="word-count">0</span></p></strong>
+              <strong><p>LETTER COUNT: <span id="char-count">0</span></p></strong>
+            </div>
+            <div id="word-letter-counter-btns">
+                <button id="countBtn"><i class="fas fa-spell-check"></i> COUNT TEXT</button>
+                <button id="clearBtn"><i class="fas fa-eraser"></i> CLEAR TEXT</button>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <!-- More Info About the tool -->
+    <div id="more-info">
+      <section id="word-counter-article">
+        <h2>Why Use a Word Counter?</h2>
+        <p>Word counters are essential for writers, students, and professionals who need to meet specific word or character limits. Whether you're crafting an essay, preparing a tweet, or optimizing content for SEO, knowing your word count helps you stay concise and effective.</p>
+
+        <h3>Features of Our Tool</h3>
+        <ul>
+          <li><strong>Instant Results:</strong> Get real-time word and character counts as you type or paste your text.</li>
+          <li><strong>Easy to Use:</strong> Simple interface designed for quick access and usability.</li>
+          <li><strong>Privacy First:</strong> Your text never leaves your browser, ensuring complete privacy.</li>
+          <li><strong>Versatile:</strong> Perfect for students, bloggers, copywriters, and anyone who writes!</li>
+        </ul>
+
+        <h3>Tips for Effective Writing</h3>
+        <p>Staying within word limits can be challenging. Here are some tips:</p>
+        <ol>
+          <li>Plan your content before you start writing.</li>
+          <li>Edit ruthlessly to remove unnecessary words.</li>
+          <li>Use active voice for clarity and impact.</li>
+          <li>Review your work with our word counter to ensure you meet requirements.</li>
+        </ol>
+
+        <h3>Get Started Now!</h3>
+        <p>Try our Word Counter Tool above and make your writing process smoother and more efficient. Happy writing!</p>
+      </section>
+    </div>
+
+    <!-- Nav Sidebar for Mobile -->
+    <div id="dark-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+      <button class="close-btn" id="close-btn" aria-label="Close navigation">&times;</button>
+      <ul>
+        <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+        <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </nav>
+  
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Handy Tools</h3>
+        <p>Your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Pages/index.html">Home</a></li>
+          <li><a href="/Pages/Tools.html">Tools</a></li>
+          <li><a href="/Pages/About-Us.html">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@handytools.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="/Scripts/word-counter.js"></script>
+<script src="/Scripts/side-bar.js"></script>
+</html>

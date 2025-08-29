@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handy Tools - Temperature Converter</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Linking to Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/Media Folder/Icon.png" type="image/png">
+
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+  <!--Header Section done-->
+  <header>
+    <div class="header-container">
+      <a href="/Pages/index.html" class="logo"><img src="/Media Folder/logo.png" alt="Logo"></a>
+      <button id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+          <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Main Section partial-->
+  <main>
+    <!-- Introuduction Done -->
+    <div id="temp-con-hero">
+      <div class="black-box">
+        <section>
+          <h1>Temperature Converter Tool</h1>
+            <p>Welcome to the Temperature Converter Tool! Instantly convert temperatures between Celsius, Fahrenheit, and Kelvin. Just enter a value in any unit, and see the results in all formats—perfect for science, cooking, travel, or everyday use.</p>
+
+            <section id="tool-interactive">
+              <div id="converter-container">
+                <div id="temp-con-header">
+                  <h3 id="un">Units</h3>
+                  <h3 id="in">Input</h3>
+                </div>
+                <div id="inputs">
+                  <div class="custom-dropdown" id="temp-dropdown">
+                  <div class="dropdown-selected">Celsius (°C)</div>
+                    <ul class="dropdown-options">
+                      <li data-value="Celsius">Celsius (°C)</li>
+                      <li data-value="Fahrenheit">Fahrenheit (°F)</li>
+                      <li data-value="Kelvin">Kelvin (K)</li>
+                    </ul>
+                  </div>
+                  <input type="number" id="temp-input" placeholder="Enter temperature" autocomplete="off">
+                </div>
+
+                <div id="result-options">
+                  <h3>Result Unit:</h3>
+                  <div class="custom-dropdown" id="result-dropdown">
+                    <div class="dropdown-selected">Kelvin (K)</div>
+                    <ul class="dropdown-options">
+                      <li data-value="Celsius">Celsius (°C)</li>
+                      <li data-value="Fahrenheit">Fahrenheit (°F)</li>
+                      <li data-value="Kelvin">Kelvin (K)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="result-con">
+                  <span id="res">Result:<span id="res-value"></span></span>
+                  <button type="button" id="convert-btn"><i class="fas fa-exchange-alt"></i> Convert</button>
+                </div>
+                
+              </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- More Info -->
+    <div id="more-info">
+      <section>
+      <h2>About Temperature Conversion</h2>
+      <p>
+        Temperature conversion is essential for science, cooking, travel, and everyday life. Different regions and fields use Celsius, Fahrenheit, or Kelvin, so being able to convert between them helps ensure accuracy and understanding.
+      </p>
+      <p>
+        Key benefits of using a Temperature Converter include:
+        <ul>
+        <li>Quickly switch between Celsius, Fahrenheit, and Kelvin</li>
+        <li>Eliminate manual calculation errors</li>
+        <li>Useful for recipes, experiments, and weather comparisons</li>
+        <li>Easy to use for students, professionals, and travelers</li>
+        </ul>
+        Whether you’re checking the weather, working on a science project, or following a recipe, this tool makes temperature conversion simple and reliable.
+      </p>
+      <h3>How to Use the Temperature Converter Tool</h3>
+      <p>
+        Enter a temperature value in Celsius, Fahrenheit, or Kelvin, and the tool will instantly convert it to the other units. You can switch input units as needed and see results in real time.
+      </p>
+      <h3>Tips for Accurate Temperature Conversion</h3>
+      <ul>
+        <li>Double-check which unit you’re starting with</li>
+        <li>Use the correct formula for each conversion</li>
+        <li>Remember: Kelvin does not use degrees (just K)</li>
+        <li>Use this tool for quick, error-free results</li>
+      </ul>
+      <h3>Make Temperature Conversion Effortless</h3>
+      <p>
+        With this Temperature Converter, you can confidently convert temperatures for any purpose. Save time, avoid mistakes, and get the information you need instantly!
+      </p>
+      </section>
+    </div>
+
+    <!-- Nav Sidebar for Mobile -->
+    <div id="dark-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+      <button class="close-btn" id="close-btn" aria-label="Close navigation">&times;</button>
+      <ul>
+        <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+        <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </nav>
+  
+  </main>
+
+
+
+
+  <!--Footer Section done-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Handy Tools</h3>
+        <p>Your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Pages/index.html">Home</a></li>
+          <li><a href="/Pages/Tools.html">Tools</a></li>
+          <li><a href="/Pages/About-Us.html">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@handytools.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="/Scripts/temp-con.js"></script>
+<script src="/Scripts/side-bar.js"></script>
+</html>

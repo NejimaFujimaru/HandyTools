@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handy Tools - Mass Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/Media Folder/Icon.png" type="image/png">
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+    <!--Header Section-->
+  <header>
+    <div class="header-container">
+      <a href="/Pages/index.html" class="logo"><img src="/Media Folder/logo.png" alt="Logo"></a>
+      <button id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+          <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <!--Main Section-->
+    <main>
+        <!-- Introduction -->
+        <div id="mass-con-hero">
+            <div class="black-box">
+                <section>
+                    <h1>Mass Unit Converter Tool</h1>
+                    <p>Welcome to the Mass Unit Converter Tool! Instantly convert weights between kilograms, grams, milligrams, pounds, ounces, and tons. Just enter a value in any unit, and see the results in your desired format—perfect for cooking, shipping, science, or everyday use.</p>
+
+                    <section id="tool-interactive">
+                        <div id="converter-container">
+                            <div id="temp-con-header">
+                                <h3 id="un">Units</h3>
+                                <h3 id="in">Input</h3>
+                            </div>
+                            <div id="inputs">
+                                <div class="custom-dropdown" id="mass-dropdown">
+                                    <div class="dropdown-selected">Kilograms (kg)</div>
+                                    <ul class="dropdown-options">
+                                        <li data-value="Kilograms">Kilograms (kg)</li>
+                                        <li data-value="Grams">Grams (g)</li>
+                                        <li data-value="Milligrams">Milligrams (mg)</li>
+                                        <li data-value="Pounds">Pounds (lb)</li>
+                                        <li data-value="Ounces">Ounces (oz)</li>
+                                        <li data-value="Tons">Tons (t)</li>
+                                    </ul>
+                                </div>
+                                <input type="number" id="mass-input" placeholder="Enter mass" autocomplete="off">
+                            </div>
+
+                            <div id="result-options">
+                                <h3>Result Unit:</h3>
+                                <div class="custom-dropdown" id="result-dropdown">
+                                    <div class="dropdown-selected">Pounds (lb)</div>
+                                    <ul class="dropdown-options">
+                                        <li data-value="Kilograms">Kilograms (kg)</li>
+                                        <li data-value="Grams">Grams (g)</li>
+                                        <li data-value="Milligrams">Milligrams (mg)</li>
+                                        <li data-value="Pounds">Pounds (lb)</li>
+                                        <li data-value="Ounces">Ounces (oz)</li>
+                                        <li data-value="Tons">Tons (t)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="result-con">
+                                <span id="res">Result: <span id="res-value">-</span></span>
+                                <button type="button" id="convert-btn"><i class="fas fa-exchange-alt"></i> Convert</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <!-- More Info -->
+        <div id="more-info">
+            <section>
+                <h2>About Mass Unit Conversion</h2>
+                <p>
+                    Mass unit conversion is essential for cooking, shipping, science, health, and everyday life. Different countries and fields use various measurement systems, so being able to convert between them helps ensure accuracy and understanding.
+                </p>
+                <p>
+                    Key benefits of using a Mass Unit Converter include:
+                    <ul>
+                        <li>Quickly switch between metric and imperial systems</li>
+                        <li>Eliminate manual calculation errors</li>
+                        <li>Useful for recipes, shipping calculations, and scientific measurements</li>
+                        <li>Easy to use for cooks, shippers, scientists, and students</li>
+                    </ul>
+                    Whether you're following a recipe, calculating shipping costs, or conducting a science experiment, this tool makes mass conversion simple and reliable.
+                </p>
+                <h3>How to Use the Mass Unit Converter Tool</h3>
+                <p>
+                    Enter a mass value in any unit, select your desired output unit, and the tool will instantly convert it. You can switch input and output units as needed and see results in real time.
+                </p>
+                <h3>Tips for Accurate Mass Conversion</h3>
+                <ul>
+                    <li>Double-check which unit you're starting with</li>
+                    <li>Be aware of the difference between metric and imperial systems</li>
+                    <li>For precision work, use appropriate decimal places</li>
+                    <li>Use this tool for quick, error-free results</li>
+                </ul>
+                <h3>Common Mass Conversion Factors</h3>
+                <p>
+                    Understanding common conversions can be helpful: 1 kilogram = 2.20462 pounds, 1 pound = 16 ounces, 1 gram = 0.001 kilograms, 1 ton = 2000 pounds.
+                </p>
+                <h3>Make Mass Conversion Effortless</h3>
+                <p>
+                    With this Mass Unit Converter, you can confidently convert weights for any purpose. Save time, avoid mistakes, and get the information you need instantly!
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Handy Tools</h3>
+                <p>Your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/Pages/index.html">Home</a></li>
+                    <li><a href="/Pages/Tools.html">Tools</a></li>
+                    <li><a href="/Pages/About-Us.html">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@handytools.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Nav Sidebar for Mobile -->
+    <div id="dark-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-btn" aria-label="Close navigation">&times;</button>
+        <ul>
+            <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+            <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+    </nav>  
+
+    <script src="/Scripts/mass-con.js"></script>
+    <script src="/Scripts/side-bar.js"></script>
+</body>
+</html>

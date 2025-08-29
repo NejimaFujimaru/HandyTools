@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handy Tools - ToDo List</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Linking to Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/Media Folder/Icon.png" type="image/png">
+
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+  <!--Header Section done-->
+  <header>
+    <div class="header-container">
+      <a href="/Pages/index.html" class="logo"><img src="/Media Folder/logo.png" alt="Logo"></a>
+      <button id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+          <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Main Section partial-->
+  <main>
+    <!-- Introuduction Done -->
+    <div id="todo-hero">
+      <div class="black-box">
+        <section>
+          <h1>ToDo List Tool</h1>
+            <p>Organize your tasks efficiently with our ToDo List tool. Add, edit, and check off items to stay productive and keep track of your daily goals.</p>
+            
+            <section id="tool-interactive">
+              <div id="todo-list-container">
+                <form id="todo-form">
+                  <input type="text" id="todo-input" placeholder="Add a new task..." autocomplete="off" required>
+                  <button type="submit" id="add-todo-btn"><i class="fas fa-plus"></i></button>
+                </form>
+                <div id="tasks">
+                  <div id="tasks-header">
+                    <div id="tasks-title">
+                      <h2>Tasks:</h2>
+                    </div>
+                    <div id="task-actions">
+                      <button id="clear-completed-btn"><i class="fas fa-check-double"></i> Clear Completed</button>
+                      <button id="clear-all-btn"><i class="fas fa-trash"></i> Clear All</button>
+                    </div>
+                  </div>
+                  <ul id="todo-list">
+                    <!-- Tasks will appear here -->
+                  </ul>
+              </div>
+            </section>
+            
+        </section>
+
+      </div>
+    </div>
+
+    <!-- More Info -->
+    <div id="more-info">
+      <section>
+        <h2>About ToDo Lists & Productivity</h2>
+        <p>
+          A ToDo List is a simple yet powerful tool for organizing tasks, boosting productivity, and reducing stress. By writing down what you need to accomplish, you can prioritize your work, track progress, and ensure nothing important is forgotten.
+        </p>
+        <p>
+          Key benefits of using a ToDo List include:
+          <ul>
+            <li>Clear overview of daily, weekly, or project tasks</li>
+            <li>Improved time management and focus</li>
+            <li>Greater sense of achievement as you check off completed items</li>
+            <li>Reduced mental clutter and anxiety</li>
+            <li>Ability to break big goals into manageable steps</li>
+          </ul>
+          Whether for work, study, or personal life, a ToDo List helps you stay organized and motivated.
+        </p>
+        <h3>How to Use the ToDo List Tool</h3>
+        <p>
+          Enter your tasks in the input box above and click the add button. You can mark tasks as complete, edit them, or remove them as needed. Use the "Clear Completed" button to remove finished tasks, or "Clear All" to start fresh.
+        </p>
+        <h3>Tips for Effective Task Management</h3>
+        <ul>
+          <li>Write tasks clearly and specifically</li>
+          <li>Prioritize important or urgent items</li>
+          <li>Break large tasks into smaller, actionable steps</li>
+          <li>Review and update your list regularly</li>
+          <li>Celebrate progress to stay motivated</li>
+        </ul>
+        <h3>Stay Motivated & Achieve More</h3>
+        <p>
+          Consistently using a ToDo List can help you develop better habits, meet deadlines, and achieve your goals. Make it part of your daily routine for a more organized, productive, and stress-free life!
+        </p>
+      </section>
+    </div>
+
+    <!-- Nav Sidebar for Mobile -->
+    <div id="dark-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+      <button class="close-btn" id="close-btn" aria-label="Close navigation">&times;</button>
+      <ul>
+        <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+        <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </nav>
+  
+    
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Handy Tools</h3>
+        <p>Your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Pages/index.html">Home</a></li>
+          <li><a href="/Pages/Tools.html">Tools</a></li>
+          <li><a href="/Pages/About-Us.html">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@handytools.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="/Scripts/todo.js"></script>
+<script src="/Scripts/side-bar.js"></script>
+</html>

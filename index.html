@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handy Tools - Home</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Linking to Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/Media Folder/Icon.png" type="image/png">
+
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+  <!--Header Section done-->
+  <header>
+    <div class="header-container">
+      <a href="/Pages/index.html" class="logo"><img src="/Media Folder/logo.png" alt="Logo"></a>
+      <button id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+          <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Main Section partial-->
+  <main>
+    <!-- Introuduction Done -->
+    <div id="hero">
+      <div class="black-box">
+        <section>
+          <h1>Introduction</h1>
+          <p>Welcome to Handy Tools – your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier. Whether it's converting units, tracking your health, or organizing your work, we've got you covered.</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Workings: Tools Add Buttons -->
+    <div id="tools-div">
+      <h2>Our Tools</h2>
+      <!-- Tool Sections -->
+      
+      <div id="tools-grid">
+        <section class="tool">
+          <h3>Length Unit Converter</h3>
+          <div class="tool-image-placeholder">
+            <a href="/Pages/Tools/Length-Unit-Converter.html">
+              <img src="/Media Folder/Length-con-img.png" alt="Length Converter Image">
+            </a>
+          </div>
+          <p>Convert between meters, centimeters, inches, and more with just a few clicks. Our Length Unit Converter makes measurement conversions fast and reliable.</p>
+          <div class="Buttons">
+            <button id="length-con">Try Now</button>
+          </div>
+        </section>
+        
+        <section class="tool">
+          <h3>BMI Calculator</h3>
+          <div class="tool-image-placeholder">
+            <a href="/Pages/Tools/BMI-Calculator.html">
+              <img src="/Media Folder/BMI-cal-img.png" alt="BMI Calculator Image">
+            </a>
+          </div>
+          <p>Stay on top of your health with our BMI Calculator. Enter your height and weight to quickly know if you are underweight, normal, overweight, or obese.</p>
+          <div class="Buttons">
+            <button id="bmi-cal">Try Now</button>
+          </div>
+        </section>
+        
+        <section class="tool">
+          <h3>Temperature Converter</h3>
+          <div class="tool-image-placeholder">
+            <a href="/Pages/Tools/Temperature-Converter.html">
+              <img src="/Media Folder/Temp-con-img.png" alt="Temperature Converter Image">
+            </a>
+          </div>
+          <p>Switch easily between Celsius, Fahrenheit, and Kelvin with our Temperature Converter. Perfect for students, travelers, and science enthusiasts.</p>
+          <div class="Buttons">
+            <button id="temp-con">Try Now</button>
+          </div>
+        </section>
+
+        <!-- Add a see more link button to the tools page -->
+        <div class="see-more-tools">
+          <button>See More Tools...</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--About Us Done -->
+    <div id="About-Us">
+      <div class="black-box">  
+        <h2>About Us</h2>
+        <p>Handy Tools is built to provide simple yet powerful online utilities for everyday needs. Our goal is to make life easier, one tool at a time. We are a small team of passionate developers dedicated to creating user-friendly solutions for students, professionals, and anyone who needs quick access to handy tools. Explore our growing collection and let us know what features you'd like to see next!</p>
+        <a href="/Pages/About-Us.html">Read More</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Handy Tools</h3>
+        <p>Your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Pages/index.html">Home</a></li>
+          <li><a href="/Pages/Tools.html">Tools</a></li>
+          <li><a href="/Pages/About-Us.html">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@handytools.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Nav Sidebar for Mobile -->
+  <div id="dark-overlay"></div>
+  <nav class="sidebar" id="sidebar">
+    <button class="close-btn" id="close-btn" aria-label="Close navigation">&times;</button>
+    <ul>
+      <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+      <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+      <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+    </ul>
+  </nav>  
+
+</body>
+<script src="/Scripts/main.js"></script>
+<script src="/Scripts/side-bar.js"></script>
+</html>

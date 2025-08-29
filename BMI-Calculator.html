@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handy Tools - BMI Calculator</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Linking to Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/Media Folder/Icon.png" type="image/png">
+
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+  <!--Header Section done-->
+  <header>
+    <div class="header-container">
+      <a href="/Pages/index.html" class="logo"><img src="/Media Folder/logo.png" alt="Logo"></a>
+      <button id="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+          <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Main Section partial-->
+  <main>
+    <!-- Introuduction Done -->
+    <div id="bmi-hero">
+      <div class="black-box">
+        <section>
+          <h1>BMI Calculator Tool</h1>
+          <h2>How It Works</h2>
+          <div>
+            <p>Calculate your Body Mass Index (BMI) simply by entering your height in Centimeters (cm) and weight in Kilograms (kg) below. This tool helps you quickly assess whether you are underweight, normal, overweight, or obese based on your BMI value.</p>
+          </div>
+          
+          <div id="bmi-calculator">
+            <div id="img-section">
+              <img src="/Media Folder/Default-BMI.png" alt="BMI Image">
+              <strong><p>Category: <span id="bmi-category">N/A</span></p></strong>
+            </div>
+            <section id="tool-interactive">
+              <div>
+                <h2>Enter Your Details:</h2>
+                <div id="bmi-inputs">
+                  <label for="height">Height (cm):</label>
+                  <input type="number" id="height" placeholder="e.g., 170">
+                  <label for="weight">Weight (kg):</label>
+                  <input type="number" id="weight" placeholder="e.g., 65">
+                </div>
+                <button id="calculateBtn"><i class="fas fa-calculator"></i> CALCULATE BMI</button>
+                <div id="bmi-result">
+                  <strong><p>Your BMI: <span id="bmi-value">0</span></p></strong>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Workings: Tools Add Buttons -->
+    <div id="more-info">
+      <section>
+        <h2>About BMI & WHO Standards</h2>
+        <p>
+          Body Mass Index (BMI) is a simple calculation using a person's height and weight. The formula is BMI = weight (kg) / [height (m)]<sup>2</sup>. It is widely used to categorize individuals into different weight groups and assess potential health risks.
+        </p>
+        <p>
+          The World Health Organization (WHO) provides the following BMI categories:
+          <ul>
+            <li>Underweight: BMI &lt; 18.5</li>
+            <li>Normal weight: BMI 18.5 – 24.9</li>
+            <li>Overweight: BMI 25 – 29.9</li>
+            <li>Obese: BMI ≥ 30</li>
+          </ul>
+          These standards help identify whether your weight is healthy for your height and guide you towards maintaining or achieving a healthy lifestyle.
+        </p>
+        <h3>How to Use BMI</h3>
+        <p>
+          Enter your height in centimeters and your weight in kilograms above. The calculator will instantly show your BMI and category. Use this information to understand your current health status and take steps if needed.
+        </p>
+        <h3>Benefits of Good Health</h3>
+        <ul>
+          <li>Improved energy and mood</li>
+          <li>Lower risk of chronic diseases (heart disease, diabetes, etc.)</li>
+          <li>Better sleep and mental health</li>
+          <li>Enhanced physical performance</li>
+          <li>Longer life expectancy</li>
+        </ul>
+        <h3>Motivation for Exercise & Healthy Lifestyle</h3>
+        <p>
+          Regular exercise and healthy habits are key to maintaining a normal BMI and overall well-being. Physical activity strengthens your body, boosts immunity, and helps manage stress. Adopting a balanced diet, staying active, and avoiding harmful habits like smoking or excessive drinking can greatly improve your quality of life.
+        </p>
+        <p>
+          Use your BMI as a starting point to set health goals, stay motivated, and make positive changes for a happier, healthier future!
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Nav Sidebar for Mobile -->
+    <div id="dark-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+      <button class="close-btn" id="close-btn" aria-label="Close navigation">&times;</button>
+      <ul>
+        <li><a href="/Pages/index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="/Pages/Tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+        <li><a href="/Pages/About-Us.html"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </nav>
+  
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Handy Tools</h3>
+        <p>Your one-stop solution for quick, simple, and useful utilities that make everyday tasks easier.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Pages/index.html">Home</a></li>
+          <li><a href="/Pages/Tools.html">Tools</a></li>
+          <li><a href="/Pages/About-Us.html">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@handytools.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="/Scripts/bmi-cal.js"></script>
+<script src="/Scripts/side-bar.js"></script>
+</html>
