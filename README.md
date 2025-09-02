@@ -1,10 +1,10 @@
-Handy Tools - Project Documentation
+# Handy Tools - Project Documentation
 
-Introduction
+## Introduction
 Handy Tools is a comprehensive web application that provides users with a suite of practical and easy-to-use utilities designed to simplify everyday tasks. The platform offers various conversion tools, health calculators, and productivity tools, all accessible through an intuitive and responsive interface.
 
-Features
-1. Multiple Utility Tools:
+## Features
+### 1. Multiple Utility Tools:
    - Temperature Converter (Celsius, Fahrenheit, Kelvin)
    - Length Unit Converter (Meters, Kilometers, Centimeters, Millimeters, Miles, Yards, Feet, Inches)
    - Mass Unit Converter (Kilograms, Grams, Milligrams, Pounds, Ounces, Tons)
@@ -12,20 +12,20 @@ Features
    - Word Counter with character count
    - To-Do List with local storage
 
-2. User-Friendly Interface:
+### 2. User-Friendly Interface:
    - Clean, modern design with responsive layout
    - Intuitive navigation system
    - Mobile-friendly sidebar for smaller screens
    - Consistent styling across all pages
 
-3. Technical Features:
+### 3. Technical Features:
    - Real-time calculations and conversions
    - Dropdown menus for unit selection
    - Interactive elements with hover effects
    - Form validation and error handling
    - Local storage for To-Do List persistence
 
-Technologies Used
+## Technologies Used
 - Frontend: HTML5, CSS3, JavaScript (ES6+)
 - Styling: Custom CSS with Flexbox and Grid layouts
 - Icons: Font Awesome 6.4.0
@@ -37,7 +37,7 @@ Technologies Used
 
 
 
-Project Structure
+## Project Structure
 ```
 Project/
 ├── Pages/
@@ -69,7 +69,7 @@ Project/
 ```
 
 
-How to Use
+## How to Use
 1. Navigation: Use the header navigation to access Home, Tools, and About pages
 2. Tools Selection: Browse available tools on the Tools page or featured tools on the Homepage
 3. Using Converters:
@@ -87,35 +87,35 @@ How to Use
    - Mark tasks as complete with checkboxes
    - Delete individual tasks or clear all/completed tasks
 
-Implementation Details
+## Implementation Details
 
-Responsive Design
+### Responsive Design
 The website uses a mobile-first approach with responsive breakpoints:
 - Desktop: 1200px and above
 - Tablet: 768px to 1199px
 - Mobile: 480px to 767px
 - Small Mobile: Below 480px
 
-JavaScript Functionality
+### JavaScript Functionality
 - Dropdown Menus: Custom implementation for unit selection
 - Conversion Logic: Accurate formulas for all unit conversions
 - Real-time Updates: Instant calculation on input change or button click
 - Local Storage: Persistent data storage for the To-Do List
 
-Styling Approach
+### Styling Approach
 - CSS variables for consistent color scheme
 - Flexbox and Grid for layout management
 - Smooth transitions and animations for interactive elements
 - Custom form elements for better user experience
 
-Future Enhancements
+### Future Enhancements
 1. User accounts for saving preferences and history
 2. Additional tools (currency converter, time zone converter, etc.)
 3. Dark/light mode toggle
 4. Export functionality for conversion results
 5. Integration with external APIs for real-time data
 
-Browser Compatibility
+### Browser Compatibility
 The website is compatible with all modern browsers including:
 - Chrome (version 70+)
 - Firefox (version 65+)
@@ -123,7 +123,7 @@ The website is compatible with all modern browsers including:
 - Edge (version 79+)
 
 
-Conclusion
+## Conclusion
 Handy Tools provides a comprehensive solution for everyday utility needs with a focus on user experience and functionality. The clean design, responsive layout, and accurate calculations make it a valuable resource for students, professionals, and general users alike.
 
 This project demonstrates proficiency in frontend web development, including HTML5, CSS3, JavaScript, responsive design principles, and user interface design.
