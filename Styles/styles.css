@@ -1100,14 +1100,18 @@ main {
 
 /* Responsive tweaks for BMI Calculator Tool Page */
 @media (max-width: 480px) {
+    #bmi-hero .black-box {
+        padding: 0;
+    }
+
     #bmi-calculator {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
     #bmi-calculator #tool-interactive {
-        width: 100%;
+        width: 70%;
         padding: 1rem;
         border-radius: 20px;
     }
@@ -1125,7 +1129,7 @@ main {
     }
 
     #bmi-calculator #img-section {
-        width: 100%;
+        width: 30%;
         font-size: 1.5rem;
         padding: 10px;
         border-radius: 20px;
@@ -1134,6 +1138,20 @@ main {
     #bmi-calculator #img-section img {
         height: auto;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    #bmi-calculator #calculateBtn {
+        font-size: 1.25rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #bmi-calculator #calculateBtn {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.6rem;
     }
 }
 
