@@ -1443,6 +1443,10 @@ main {
     height: fit-content;
 }
 
+#converter-container section {
+    height: auto;
+}
+
 #temp-con-header {
     display: flex;
     width: 100%;
@@ -1608,6 +1612,90 @@ input[type="number"]:focus {
 #convert-btn:hover {
     background-color: #0160dd;
     box-shadow: 3px 5px 5px rgba(0,0,0,0.1) ;
+}
+
+/* Responsive tweaks for Temperature Converter Tool Page */
+@media (max-width: 480px) {
+    #temp-con-hero .black-box {
+        padding: 0;
+    }
+
+    #converter-container {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    #temp-con-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #temp-con-header #un, #temp-con-header #in {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #converter-container #inputs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #converter-container .custom-dropdown {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    #converter-container #result-options {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #result-con #res {
+        font-size: 1rem;
+        padding: 8px 10px;
+        width: 100%;
+    }
+
+    #convert-btn {
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 0.5rem 1rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    #mass-con-hero .black-box {
+        padding: 0;
+    }
+
+    #length-con-hero .black-box {
+        padding: 0;
+    }    
+    
+    #temp-con-hero .black-box {
+        padding: 0;
+    }   
+    
+    #convert-btn {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    #convert-btn {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+        height: auto;
+    }
 }
 
 /* Minimal responsive tweaks for tools pages only
