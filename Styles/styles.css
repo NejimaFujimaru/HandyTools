@@ -1320,6 +1320,111 @@ main {
     background-color: #df0000;
 }
 
+/* Responsive tweaks for Todo Tool Page */
+@media (max-width: 480px) {
+    #todo-hero .black-box {
+        padding: 0;
+    }
+
+    #todo-list-container {
+        padding: 1rem 0.5rem;
+        border-radius: 20px;
+    }
+
+    #todo-form input {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    #add-todo-btn {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        height: 35px;
+    }
+
+    #tasks-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #tasks-title {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #task-actions {
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .task-item {
+        font-size: 16px;
+    }
+
+    .task-checkbox {
+        width: 28px;
+        height: 28px;
+    }
+
+    .delete-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    #add-todo-btn {
+        font-size: 1.25rem;
+        padding: 0.4rem 0.8rem;
+        height: 30px;
+    }
+
+    .task-item {
+        font-size: 14px;
+    }
+
+    .task-checkbox {
+        width: 24px;
+        height: 24px;
+    }
+
+    .delete-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    #add-todo-btn {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.6rem;
+        height: 28px;
+    }
+
+    .task-item {
+        font-size: 13px;
+    }
+
+    .task-checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .delete-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    #clear-all-btn, #clear-completed-btn {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
 /* Temperature Converter Tool Page Styles */
 #converter-container {
     display: flex;
